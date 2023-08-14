@@ -567,6 +567,16 @@ p {
         padding: 43px 0;
         display: none;
 
+        @include desktop {
+            top: vw(90px);
+            padding: vw(43px) 0;
+        }
+        
+        @include tablet {
+            top: vwt(97px);
+            padding: vwt(43px) 0;  
+        }
+
         ul {
             padding: 0;
             margin: 0;
@@ -578,6 +588,16 @@ p {
             display: flex;
             flex-direction: column;
             width: 350px;
+
+            @include desktop {
+                margin-left: vw(280px);
+                width: vw(350px);
+            }
+            
+            @include tablet {
+                margin-left: 0;
+                width: vwt(300px);
+            }
 
             > li {
                 position: relative;
@@ -606,6 +626,18 @@ p {
                     line-height: 24px; 
                     position: relative;
                     padding: 13px 0;
+
+                    @include desktop {
+                        font-size: vw(16px);
+                        line-height: vw(24px);
+                        padding: vw(13px) 0;
+                    }
+                    
+                    @include tablet {
+                        font-size: vwt(16px);
+                        line-height: vwt(24px);
+                        padding: vwt(13px) 0; 
+                    }
                     
                     &::before {
                         content: "";
@@ -615,6 +647,16 @@ p {
                         top: 0;
                         right: -125px;
                         z-index: 2;
+
+                        @include desktop {
+                            width: vw(125px);
+                            right: vw(-125px);
+                        }
+                        
+                        @include tablet {
+                            width: vwt(50px);
+                            right: vwt(-50px); 
+                        }
                     }
                     
                     &:hover {
@@ -634,6 +676,18 @@ p {
             gap: 15px 125px;
             visibility: hidden;
             opacity: 0;
+
+            @include desktop {
+                left: vw(475px);
+                width: vw(635px); 
+                gap: vw(15px) vw(125px);
+            }
+            
+            @include tablet {
+                left: vwt(350px);
+                width: vwt(635px); 
+                gap: vwt(15px) vwt(50px );   
+            }
     
             > li {
                 width: 40%;
@@ -643,6 +697,18 @@ p {
                     font-size: 14px;
                     line-height: 18px;
                     letter-spacing: 0.28px;
+
+                    @include desktop {
+                        font-size: vw(14px);
+                        line-height: vw(18px);
+                        letter-spacing: vw(0.28px);
+                    }
+                    
+                    @include tablet {
+                        font-size: vwt(14px);
+                        line-height: vwt(18px);
+                        letter-spacing: vwt(0.28px); 
+                    }
     
                     &:hover {
                         color: var(--orange);
