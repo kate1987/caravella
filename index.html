@@ -2,9 +2,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Caravella - Home</title>
+    <meta name="description" content="Markup for Caravella">
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    <header></header>
+    <div class="top hidden--mobile">
+        <div class="wrapper">
+            <ul class="top__info">
+                <li><a href="mailto:caravella.gr@gmail.com">caravella.gr@gmail.com</a></li>
+                <li><a href="tel:+38(032)232-05-43">+38 (032) 232-05-43</a></li>
+            </ul>
+            <ul class="top__menu">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Как заказать</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Оплата-Возврат</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>     
+    </div>
+    <header class="site-header">
+        <div class="wrapper">
+            <a href="index.html" class="site-header__logo">
+                <svg width="180" height="40">
+                    <use width="100%" height="100%" xlink:href="assets/img/svg/_sprite.svg#logo"></use>
+                </svg>
+            </a>
+            <a href="catalog.html" class="site-header__open-menu">
+                <svg width="26" height="26">
+                    <use width="100%" height="100%" xlink:href="assets/img/svg/_sprite.svg#hamburger"></use>
+                </svg>  
+                <span class="hidden--mobile">Каталог</span>    
+            </a>
+            <form action="" class="site-header__search hidden--tablet">
+                <input name="header-search" type="search" placeholder="Поиск по каталогу товаров" value="" />
+                <input type="submit" value="Найти" />
+            </form>
+            <nav class="site-header__menu hidden--mobile">
+                <button class="site-header__close-menu hidden--desktop">
+                    <svg width="24" height="24">
+                        <use width="100%" height="100%" xlink:href="assets/img/svg/_sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <ul class="hidden--desktop">
+                    <li><a href="#"><strong>Каталог</strong></a></li>  
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Как заказать</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата-Возврат</a></li>
+                    <li><a href="#">Контакты</a></li>  
+                </ul>
+                <ul>
+                    <li><a href="#">Вход</a></li>
+                    <li><a href="#">Регистрация</a></li>
+                    <li><a href="#">Список пожеланий</a></li>
+                </ul>
+            </nav>
+            <a class="site-header__search-icon hidden--tablet" href="#">
+                <svg width="22" height="22">
+                    <use width="100%" height="100%" xlink:href="assets/img/svg/_sprite.svg#search"></use>
+                </svg>  
+            </a>
+            <a class="site-header__cart" href="cart.html">
+                <svg width="30" height="30">
+                    <use width="100%" height="100%" xlink:href="assets/img/svg/_sprite.svg#cart"></use>
+                </svg>  
+            </a>
+        </div>
+        <nav class="site-header__catalog-menu hidden--mobile">
+            <div class="wrapper">
+                <ul>
+                    <li>
+                        <a href="#">Крепеж и метизы (16)</a>
+                        <ul class="site-header__sub-menu">
+                            <li><a href="#">Din3017 Хомут червячный</a></li>
+                            <li><a href="#">Хомут трубный без резины с одним винтом</a></li>
+                            <li><a href="#">Din3017 Хомут червячный с пружиной</a></li>
+                            <li><a href="#">Хомут трубный без резины с двумя винтами</a></li>
+                            <li><a href="#">Din3017 силовой с одним болтом</a></li>
+                            <li><a href="#">Din3570 Хомут U-образный</a></li>
+                            <li><a href="#">Din3017 Хомут с резиной</a></li>
+                            <li><a href="#">Хомут вентиляционный AERO с одним винтом</a></li>
+                            <li><a href="#">Din3017 Хомут без резины</a></li>
+                            <li><a href="#">Хомут вентиляционный AERO с двумя винтами</a></li>
+                            <li><a href="#">Din3017 Хомут с латексом</a></li>
+                            <li><a href="#">Зажимной хомут DWC</a></li>
+                            <li><a href="#">Хомут Cobra</a></li>
+                            <li><a href="#">Хомут стремянка (хомут глушителя)</a></li>
+                            <li><a href="#">Хомут силовой Mini</a></li>
+                            <li><a href="#">Хомут Rapid</a></li>
+                            <li><a href="#">Хомут силовой Robust один болт</a></li>
+                            <li><a href="#">Хомут с основанием</a></li>
+                            <li><a href="#">Хомут силовой Robust два болта</a></li>
+                            <li><a href="#">Хомут трубный теплоизоляционный с двумя винтами</a></li>
+                            <li><a href="#">Хомут силовой Robust один болт с пружиной</a></li>
+                            <li><a href="#">Червячный замок</a></li>
+                            <li><a href="#">Хомут силовой Robust два болта с пружиной</a></li>
+                            <li><a href="#">Червячная лента</a></li>
+                            <li><a href="#">Хомут ушной одинарный</a></li>
+                            <li><a href="#">Хомут стяжка</a></li>
+                            <li><a href="#">Хомут ушной двойной</a></li>
+                            <li><a href="#">Хомут П-образный</a></li>
+                            <li><a href="#">Хомуты ушные Ear clips с вкладышем</a></li>
+                            <li><a href="#">Хомут трубный ARS</a></li>
+                            <li><a href="#">Хомут трубный с резиной один винт</a></li>
+                            <li><a href="#">Хомут трубный с резиной с двумя винтами</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Крепеж и метизы дюймовые (8)</a></li>
+                    <li><a href="#">Полиамидный крепеж и метизы (10)</a></li>
+                    <li><a href="#">Заклепки (3)</a></li>
+                    <li><a href="#">Крепление для солнечных панелей-батарей (7)</a></li>
+                    <li><a href="#">Такелаж (15)</a></li>
+                    <li><a href="#">Дельные вещи (20)</a></li>
+                    <li><a href="#">Хомуты (33)</a></li>
+                    <li><a href="#">Шайба Nord-Lock (2)</a></li>
+                    <li><a href="#">Технология восстановления резьбы (3)</a></li>
+                    <li><a href="#">Заклепочный инструмент</a></li>
+                    <li><a href="#">Запрессовочный крепеж (3)</a></li>
+                    <li><a href="#">Защитные перчатки</a></li>
+                    <li><a href="#">Рабочая обувь</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <script src="assets/js/custom.js"></script>
 </body>
 </html>

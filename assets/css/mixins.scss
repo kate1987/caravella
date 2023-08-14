@@ -1,0 +1,57 @@
+$desktop: 1920px;
+$tablet: 992px;
+$tablet-design: 960px;
+$mobile: 375px;
+
+@mixin desktop-px {
+    @media (max-width: $desktop) {
+        @content;      
+    }
+}
+
+@mixin desktop {
+    @media only screen and (max-width: calc($desktop - 1px)) and (min-width: calc($tablet + 1px)) {
+        @content;      
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: $tablet) and (min-width: calc($mobile + 1px)) {
+        @content;      
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;      
+    }
+}
+
+@function vw($px) {
+    @return calc(($px / $desktop) * 100 * 1vw);
+}
+
+@function vwt($px) {
+    @return calc(($px / $tablet-design) * 100 * 1vw);   
+}
+
+@function vwm($px) {
+    @return calc(($px / $mobile) * 100 * 1vw);
+}
+
+$font__family: 'Rubik';
+
+:root, [data-theme="default"] {
+    // main
+    --p: #808080;
+    --white: #fff;
+    --light-grey: #9CA7AC;
+    --orange: #FF8200;
+    --bg: #F7F9F9;
+    --black: #303030;
+    --border: #E5EBEF;
+    --placeholder: #BAC1C7;
+    --btn-color: #838E96;
+    --black-default: #000;
+    --bg-menu: #FBFCFC;
+}

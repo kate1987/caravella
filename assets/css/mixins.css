@@ -1,0 +1,13 @@
+:root, [data-theme=default] {
+  --p: #808080;
+  --white: #fff;
+  --light-grey: #9CA7AC;
+  --orange: #FF8200;
+  --bg: #F7F9F9;
+  --black: #303030;
+  --border: #E5EBEF;
+  --placeholder: #BAC1C7;
+  --btn-color: #838E96;
+  --black-default: #000;
+  --bg-menu: #FBFCFC;
+}/*# sourceMappingURL=mixins.css.map */
